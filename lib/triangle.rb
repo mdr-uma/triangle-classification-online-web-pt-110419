@@ -10,7 +10,7 @@ class Triangle
     if (@size_1 <= 0) || (@size_2 <= 0) || (@size_3 <= 0)
       raise TriangleError
     elsif (@size_1 + @size_2 <= @side_3)
-      
+
       # :equilateral
 
     end
