@@ -1,14 +1,16 @@
 class Triangle
 
-  def initialize(size_1, size_2, size_3)
-    @size_1 = size_1
-    @size_2 = size_2
-    @size_3 = size_3
+  def initialize(side_1, side_2, side_3)
+    @side_1 = size_1
+    @side_2 = size_2
+    @side_3 = size_3
   end
 
   def kind
-    if (size_1 <= 0) || (size_2 <= 0) || (size_3 <= 0)
+    if (@size_1 <= 0) || (@size_2 <= 0) || (@size_3 <= 0)
       raise TriangleError
+    elsif (@size_1 + @size_2 <= @side_3)
+      
       # :equilateral
 
     end
