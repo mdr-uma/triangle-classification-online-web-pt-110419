@@ -7,7 +7,10 @@ class Triangle
   end
 
   def kind
+    if (size_1 >= 0) == (size_2 >= 0) && (size_2 >= 0) == (size_3 >= 0) && (size_1 >= 0) == (size_3 >=)
+      :equilateral
 
+    end
   end
 
   class TriangleError < StandardError
