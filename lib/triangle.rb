@@ -7,8 +7,9 @@ class Triangle
   end
 
   def kind
-    if (size_1 >= 0) == (size_2 >= 0) && (size_2 >= 0) == (size_3 >= 0) && (size_1 >= 0) == (size_3 >=0)
-      :equilateral
+    if (size_1 <= 0) || (size_2 <= 0) || (size_3 <= 0)
+      raise TriangleError
+      # :equilateral
 
     end
   end
